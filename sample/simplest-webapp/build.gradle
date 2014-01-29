@@ -1,0 +1,9 @@
+
+
+description = 'Simplest Maven WebApp'
+
+apply plugin: 'war'
+
+dependencies {
+    providedCompile group: 'javax', name: 'javaee-web-api', version:'6.0'
+}

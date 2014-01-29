@@ -1,0 +1,7 @@
+rootProject.name = 'parent'
+include ':simple-parent:simplest-maven-sample', ':simple-parent:simple-weather', ':simple-parent:simple-webapp', ':simple-parent'
+
+project(':simple-parent:simplest-maven-sample').projectDir = "$rootDir/sample/simplest-webapp" as File
+project(':simple-parent:simple-weather').projectDir = "$rootDir/sample/simple-weather" as File
+project(':simple-parent:simple-webapp').projectDir = "$rootDir/sample/simple-webapp" as File
+project(':simple-parent').projectDir = "$rootDir/sample" as File

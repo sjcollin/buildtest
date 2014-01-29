@@ -1,0 +1,24 @@
+#y branch
+#test for production
+run 'mvn install'
+
+http://192.168.1.209:7001/simplest-webapp
+http://192.168.1.209:7001/simple-webapp/weather?zip=80130
+
+# this is a new commit on a branch called 'featurebranch' for testing
+
+# Enable weblogic deploy
+mvn install:install-file -Dfile=/Users/stevecollins/local/Oracle/Middleware/wlserver_12.1/server/lib/weblogic-maven-plugin.jar -DpomFile=pom.xml
+see: http://docs.oracle.com/cd/E24329_01/web.1211/e24443/maven_deployer.htm
+
+#Update only because test of new branch
+
+Added By Ashok Manthina
+Added By Ashok Manthina
+First commit
+second commit
+
+added in feature branch
+
+second commit on feature branch
+changed the email address

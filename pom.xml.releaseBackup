@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>oracle.alm</groupId>
+  <artifactId>parent</artifactId>
+  <version>0.8-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>Multi Chapter Parent Project</name>
+  <modules>
+    <module>sample</module>
+  </modules>
+
+<scm>
+  <connection>scm:git:ssh://steve.collins%40oracle.com@alm.oraclecorp.com:2222/qa-dev_simple-maven/qa-dev_simple-maven.git</connection>
+  <url>scm:git:ssh://steve.collins%40oracle.com@alm.oraclecorp.com:2222/qa-dev_simple-maven/qa-dev_simple-maven.git</url>
+  <!-- <tag>HEAD</tag> -->
+</scm>
+
+<distributionManagement>
+    <snapshotRepository>
+      <id>snapshots-local</id>
+          <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+</distributionManagement>
+
+
+</project>
